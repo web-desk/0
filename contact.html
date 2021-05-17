@@ -6,7 +6,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="140.png">
 		<link rel="icon" type="image/jpg" sizes="32x32" href="32.jpg">
 		<link rel="icon" type="image/jpg" sizes="16x16" href="16.jpg">
-		<meta name="theme-color" content="#4285f4">	
+		<meta name="theme-color" content="#00BFFF">	
 		<meta name="keywords" content="web desktop" />	
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="description" content="Web-desk contain web version of most popular application of desktop that you use for freelance  or education purposes 	" />
@@ -18,13 +18,20 @@
 	  a{ text-decoration: none;
 	   font-size: 25px;
 	   }
-	.topnav {
+	
+	
+	.navbar {
 	overflow: hidden;
-	background-color: #246;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
 	}
 	
-	.text{
-	float: left  ;
+	.navbar a {
+	float: left;
+	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
@@ -32,88 +39,97 @@
 	font-size: 17px;
 	}
 	
-	.hover{
-	background-color: #ddd;
+	.navbar a:hover {
+	background: #ddd;
 	color: black;
 	}
 	
+	.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: auto; /* Used in this example to enable scrolling */
+	}
+	
+	
 	.active {
-	background-color: #4CAF50;
+	background-color: #006400;
 	color: white;
-	float: left  ;
+	float: left ;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 	}
-	   .card {
-	   box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
-	   max-width: auto;
-	   border-radius:15px;
-	   margin: auto;
-	   text-align: center;
-	   font-family: arial;
-	   }
-	   
-	   .Name {
-	   color: black;
-	   font-size: 22px;
-	   }
-	   
-	   .card button {
-	   border: none;
-	   outline: 0;
-	   padding: 20px;
-	   color: white;
-	   background-color: #258;
-	   text-align: center;
-	   cursor: pointer;
-	   width: 100%;
-	   font-size: 18px;
-	   }
-	   
-	   .card button:hover {
-	   opacity: 0.7;
-	   }.btn{
-	   color:back;
-	   background-color: white;
-	   padding:10px 35px ;
-	   border-radius:10px;
-	   text-decoration:none ;
-	   } 
-	   </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	.card {
+	box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+	max-width: auto;
+	border-radius:15px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	}
+	
+	.Name {
+	color: black;
+	font-size: 22px;
+	}
+	
+	.card button {
+	border: none;
+	outline: 0;
+	padding: 20px;
+	color: white;
+	background-color: #258;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	}
+	
+	.card button:hover {
+	opacity: 0.7;
+	}.btn{
+	color:back;
+	background-color: white;
+	padding:10px 35px ;
+	border-radius:10px;
+	text-decoration:none ;
+	} 
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-<body>
-<div class="topnav">
-  <a class="text" href="https://web-desk.rf.gd/dark.html">Home</a>
-  <a class="active" href="https://web-desk.rf.gd/contact.html">Contact</a>
-  <a  class="text" href="#about">About</a>
-  <a  class="text" href="https://web-desk.rf.gd/contactlight.html">light mode<i class="fa fa-sun-o" style ="color :yellow;"></i> 	</a>
-<img src="images.jpg" height="0px" width="0px"></img>
-</div><h3></h3>
-<form action="https://web-desk.rf.gd/commentdark.php" method="post">
-Name: <input type="text" name="username" value="">
-<br>
-<br>
-E-mail: <input type="text" name="email" value="">
-<br>
-<br>
-Comment: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
-<input  style="font-size: 25px;" class="card button" type="submit" name="submit" value="Submit" action="https://web-desk.rf.gd/commentdark.php">  </form>
-<h3 style= " text-align: center;"><br>---------or---------<br>
-<button style ="color:back;
-	   background-color: white;
-	   padding:10px 50px ;
-	   border-radius:10px;
-	   text-decoration:none ;" ><a href="https://github.com/web-desk" >Github</a></button><br>
-<br>
-<button class="btn"><a href="https://www.facebook.com/web.desk.33" >Facebook</a></button><br>
-<br>
-<button style ="color:back;
-	   background-color: white;
-	   padding:10px 60px ;
-	   border-radius:10px;
-	   text-decoration:none ;"><a href=" mailto:collweb1@gmail.com?subject=issue&body=http://web-desk.rf.gd" >Gmail</a></button></h3>
-</body></html>
+	<body>
+	<div class="navbar" style ="background :#87CEFA;">
+	<a  href="https://web-desk.rf.gd/dark.html">Home</a>
+	<a class="active" href="https://web-desk.rf.gd/contact.html">Contact</a>
+	<a   href="#about">About</a>
+	<a   href="https://web-desk.rf.gd/contactlight.html">light mode<i class="fa fa-sun-o" style ="color :white;"></i> 	</a>
+	<img src="images.jpg" height="0px" width="0px"></img>
+	</div>
+	<div class="main">
+	<h3> write your comment here</h3>
+	<form action="https://web-desk.rf.gd/commentdark.php" method="post">
+	Name: <input type="text" name="username" value="">
+	<br>
+	<br>
+	E-mail: <input type="text" name="email" value="">
+	<br>
+	<br>
+	Comment: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
+	<input  style="font-size: 25px;" class="card button" type="submit" name="submit" value="Submit" action="https://web-desk.rf.gd/commentdark.php">  </form>
+	<h3 style= " text-align: center;"><br>-----------or-----------<br>
+	<button style ="color:back;
+	background-color: white;
+	padding:10px 50px ;
+	border-radius:10px;
+	text-decoration:none ;" ><a href="https://github.com/web-desk" >Github</a></button><br>
+	<br>
+	<button class="btn"><a href="https://www.facebook.com/web.desk.33" >Facebook</a></button><br>
+	<br>
+	<button style ="color:back;
+	background-color: white;
+	padding:10px 60px ;
+	border-radius:10px;
+	text-decoration:none ;"><a href=" mailto:collweb1@gmail.com?subject=issue&body=http://web-desk.rf.gd" >Gmail</a></button></h3></div>
+	</body></html>

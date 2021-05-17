@@ -6,7 +6,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="140.png">
 		<link rel="icon" type="image/jpg" sizes="32x32" href="32.jpg">
 		<link rel="icon" type="image/jpg" sizes="16x16" href="16.jpg">
-		<meta name="theme-color" content="#4285f4">	
+		<meta name="theme-color" content="#87CEFA">	
 		<meta name="keywords" content="web desktop" />	
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="description" content="Web-desk contain web version of most popular application of desktop that you use for freelance  or education purposes 	" />
@@ -18,27 +18,40 @@
 	  a{ text-decoration: none;
 	   font-size: 25px;
 	   }
-	.topnav {
-	overflow: hidden;
-	background-color: #246;
-	}
-	
-	.text{
-	float: left  ;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	}
-	
-	.hover{
-	background-color: #ddd;
-	color: black;
-	}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: auto; /* Used in this example to enable scrolling */
+}
+
 	
 	.active {
-	background-color: #4CAF50;
+	background-color: #32CD32;
 	color: white;
 	float: left  ;
 	color: #f2f2f2;
@@ -86,14 +99,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 <body>
-<div class="topnav">
-  <a class="text" href="https://web-desk.rf.gd/index.html">Home</a>
-  <a class="active" href="https://web-desk.rf.gd/contact.html">Contact</a>
-  <a  class="text" href="#about">About</a>
-  <a  class="text" href="https://web-desk.rf.gd/contact.html">dark mode<i class="fa fa-moon-o" style ="color :white;"></i> 	</a>
+<div class="navbar" style ="background :#87CEFA;">
+  <a  href="https://web-desk.rf.gd/index.html">Home</a>
+  <a class="active" href="https://web-desk.rf.gd/contactlight.html">Contact</a>
+  <a   href="#about">About</a>
+  <a   href="https://web-desk.rf.gd/contact.html">dark mode<i class="fa fa-moon-o" style ="color :white;"></i> 	</a>
 <img src="images.jpg" height="0px" width="0px"></img>
-</div><h3></h3>
-
+</div>
+<div class="main">
+<h3> write your comment here</h3>
 <form action="https://web-desk.rf.gd/comment.php" method="post">
 Name: <input type="text" name="username" value="">
 <br>
@@ -103,7 +117,7 @@ E-mail: <input type="text" name="email" value="">
 <br>
 Comment: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
 <input  style="font-size: 25px;" class="card button" type="submit" name="submit" value="Submit" action="https://web-desk.rf.gd/comment.php">  </form>
-<h3 style= " text-align: center;"><br>---------or---------<br>
+<h3 style= " text-align: center;"><br>-----------or-----------<br>
 <button style ="color:back;
 	   background-color: white;
 	   padding:10px 50px ;
@@ -116,5 +130,5 @@ Comment: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
 	   background-color: white;
 	   padding:10px 60px ;
 	   border-radius:10px;
-	   text-decoration:none ;"><a href=" mailto:collweb1@gmail.com?subject=issue&body=http://web-desk.rf.gd" >Gmail</a></button></h3>
+	   text-decoration:none ;"><a href=" mailto:collweb1@gmail.com?subject=issue&body=http://web-desk.rf.gd" >Gmail</a></button></h3></div>
 </body></html>

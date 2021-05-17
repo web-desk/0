@@ -6,7 +6,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="140.png">
 		<link rel="icon" type="image/jpg" sizes="32x32" href="32.jpg">
 		<link rel="icon" type="image/jpg" sizes="16x16" href="16.jpg">
-		<meta name="theme-color" content="#4285f4">	
+		<meta name="theme-color" content="#00BFFF">	
 		<meta name="keywords" content="web desktop" />	
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="description" content="Web-desk contain web version of most popular application of desktop that you use for freelance  or education purposes 	" />
@@ -18,13 +18,19 @@
 	  a{ text-decoration: none;
 	   font-size: 30px;
 	   }
-	.topnav {
+	
+	.navbar {
 	overflow: hidden;
-	background-color: #246;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
 	}
 	
-	.text{
-	float: left  ;
+	.navbar a {
+	float: left;
+	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
@@ -32,13 +38,19 @@
 	font-size: 17px;
 	}
 	
-	.hover{
-	background-color: #ddd;
+	.navbar a:hover {
+	background: #ddd;
 	color: black;
 	}
 	
+	.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: auto; /* Used in this example to enable scrolling */
+	}
+	
 	.active {
-	background-color: #4CAF50;
+	background-color: #006400;
 	color: white;
 	float: left  ;
 	color: #f2f2f2;
@@ -82,7 +94,7 @@
 <body>
 <?php include 'coll-web.hyperphp.com/viewer.php';?>
 
-<div class="topnav">
+<div class="navbar" style="background:#00BFFF;">
   <a class="active" href="https://web-desk.rf.gd/dark.html">Home</a>
   <a class="text" href="https://web-desk.rf.gd/contact.html">Contact</a>
   <a  class="text" href="#about">About</a>
@@ -90,6 +102,7 @@
 <img src="140.png" height="0px" width="0px"></img>
 
   </div>
+  <div class="main">
 <h5> <strong>Web-desk</strong> is a website that contains conventional applications that are mostly used on  desktops.Web-desk provides the service:
 
 <ul >
@@ -103,6 +116,7 @@
 <li>Autocad</li>
 <li>Desktop environment </li>
 <li>Game builder</li>
+<li>Mailsender</li>
 </ul>
 </h5><p hidden > web-desk was created by Adnan akib</p>
 <h2 style="padding-left: 0px;">
@@ -271,6 +285,14 @@
 <p><button> <a href="https://editor.gdevelop-app.com/" style="color: white;" >open</a> </button></p>
 </div>
 
+<u><a href="https://www.google.com/search?q=Mailsender " class="color">#Mailsender :</a></u>
+<br>
+<div class="card" style ="background :white ; color:black;">
+<img src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfdsz5TSDXyOuCiu2oKqlqz_WPp3qREkj068z_I0BVw2H7buSl&s'    width="auto" height ="auto"" >
+<p class="Name">Emkei</p>
+<h5 style ="color :red;    text-align: left;">Rating: &#x2605; &#x2605; &#x2605; &#x2605; </h5>
+<p><button> <a href=" https://emkei.cz/" style="color: white;" >open</a> </button></p>
+</div>
 
 <a href="#" >coming soon... </a>
 <div class="card" style ="background :white ; color:black;">
@@ -279,6 +301,6 @@
 <h5 style ="color :red;    text-align: left;">Rating:  &#x2605; &#x2605; &#x2605; </h5>
 <p><button> <a href="" style="color: white;" >coming soon</a> </button></p>
 </div >
-
+</div>
 </body>	
 </html>
